@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+
+  <body>
+    <h1 id="title">CamTech Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input type="text" id="name" placeholder="name" required> </label>
+      <label for="email" id="email-label">Email <input type="email" id="email" placeholder="email" required> </label>
+      <label for="sex">Gender </label>
+      <label for="sex_male"><input type="radio" name="gender" value="male"> Male</label>
+      <label for="sex_famale"><input type="radio" name="gender" value="famale"> Female</label>
+      <label for="number" id="number-label">Age(option) <input type="number" id="number" pattern=[0-9] min=10 max=100 placeholder="age" required></label>
+      <label>What is your current major?</label>
+      <select id="dropdown">
+        <option value="data-science">Data Science</option>
+        <option value="cyber-security">Cyber Security</option>
+        <option value="software-engeneering">Software Engeneering</option>
+        <option value="robotic">Robotic</option>
+      </select>
+
+      <label>Do you like your major?</label>
+      <label><input type="radio" name="major-like" value="yes"> Yes</label>
+      <label><input type="radio" name="major-like" value="no"> No</label>
+
+      <label>What is your favorite subject <input> </label>
+
+      <label>What course would you like to see improved? (Check all that apply)</label>
+      <label><input type="checkbox" value="math"> Math</label>
+      <label><input type="checkbox" value="physic"> Physic</label>
+      <label><input type="checkbox" value="english"> English</label>
+      <label><input type="checkbox" value="chinese"> Chinese</label>
+
+      <label>Any comments or suggestions?</label>
+      <textarea>
+      </textarea>
+
+      <button type="submit" id="submit">Submit</button
+    </form>
+  </body>
+</html>
